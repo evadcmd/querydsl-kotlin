@@ -1,0 +1,14 @@
+server:
+  servlet:
+    context-path: /dslkotlin
+    session:
+      timeout: 1800
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dsldemo?enabledTLSProtocols=TLSv1.2
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    generate-ddl: true
