@@ -15,7 +15,7 @@ class QueryDSLTests {
 
     @Test
     fun queryDSLTest1() {
-        // n + 1 problem
+        // n + 1 problem ?
         val venues: List<Venue> = query.selectFrom(venue).join(event).where(event.id.`in`(52L)).fetch()
         for (venue in venues) {
             println(venue.addr)
