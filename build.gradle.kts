@@ -40,6 +40,10 @@ dependencies {
 	implementation("com.querydsl:querydsl-jpa:5.0.0:jakarta")
 	kapt("jakarta.persistence:jakarta.persistence-api:3.1.0")
 	kapt("com.querydsl:querydsl-apt:5.0.0:jakarta")
+
+	// swagger
+	implementation("org.springdoc:springdoc-openapi-ui:1.6.15")
+	implementation("org.springframework.boot:spring-boot-starter-validation")
 }
 
 tasks.withType<KotlinCompile> {
