@@ -41,9 +41,10 @@ dependencies {
 	kapt("jakarta.persistence:jakarta.persistence-api:3.1.0")
 	kapt("com.querydsl:querydsl-apt:5.0.0:jakarta")
 
+	// TODO: update when any is available
 	// swagger
-	implementation("org.springdoc:springdoc-openapi-ui:1.6.15")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
+	// implementation("org.springdoc:springdoc-openapi-ui:1.6.15") // not working
 }
 
 tasks.withType<KotlinCompile> {
